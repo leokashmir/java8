@@ -76,10 +76,41 @@ public class Exemplo {
 		 * 
 		 * */
 		
+			
+		System.out.println("\n======================  LAMBDA 2 =======================================\n");
+		
+		
+		
 		Consumer<Usuario> exibirUser1 =
 				u -> System.out.println("LAMBDA =>  Nome  ===> " + u.getNome() + " Pontos ==> "+ u.getPontos());
 				
 		usuarios.forEach(exibirUser1);
+		
+		/* Há maneiras mais resumidas ainda para essa linha de codigo.
+		 *  
+		 *  Ex1:
+		 *  Consumer<Usuario> user =u -> {System.out.println(u.getNome());};
+		 *  
+		 *  Casos haja apenas 1 instrução entre os {} podemos resumir mais.
+		 *  
+		 *   Consumer<Usuario> user =u -> System.out.println(u.getNome());
+		 *   
+		 *   E por fim, uma unica linha:
+		 *   
+		 *   Consumer<Usuario> user = u -> System.out.println(u.getNome());
+		 *   
+		 *   Podemos também passar esse trecho de código diretamente para usuarios.forEach  em vez de declarar a variável temporaria usuer
+		 *   
+		 *   usuarios.forEach(u -> System.out.println(u.getNome()));
+		 * 
+		 * */
+		
+		System.out.println("\n======================  LAMBDA 2 =======================================\n");
+		
+		
+		usuarios.forEach(u -> System.out.println("LAMBDA 1 LINHA =>  Nome  ===> " + u.getNome() + " Pontos ==> "+ u.getPontos()));
+		
+		 
 	
 	}
 }
