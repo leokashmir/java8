@@ -12,11 +12,11 @@ public class Exemplo {
 		Usuario user_1 = new Usuario("Paje", 89);
 		Usuario user_2 = new Usuario("Plant", 93);
 		Usuario user_3 = new Usuario("Jones", 79);
-	
+		Usuario user_4 = new Usuario("Bonhan", 85);
 		
 		
 		
-		List<Usuario> usuarios  = Arrays.asList(user_1, user_2, user_3);
+		List<Usuario> usuarios  = Arrays.asList(user_1, user_2, user_3, user_4);
 		
 		//Forma utilizada desde do java 5
 		for(Usuario u : usuarios){
