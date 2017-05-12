@@ -108,7 +108,7 @@ public class Exemplo {
 		System.out.println("\n======================  LAMBDA 2 =======================================\n");
 		
 		
-		usuarios.forEach(u -> System.out.println("LAMBDA 1 LINHA =>  Nome  ===> " + u.getNome() + " Pontos ==> "+ u.getPontos()));
+		usuarios.forEach(u -> System.out.println("LAMBDA 2 LINHA =>  Nome  ===> " + u.getNome() + " Pontos ==> "+ u.getPontos()));
 		
 		 
 	
